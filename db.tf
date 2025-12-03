@@ -26,6 +26,6 @@ resource "aws_db_instance" "swiggy-db" {
   }
 
 }
-/*
+*/
 
 
