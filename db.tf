@@ -3,7 +3,7 @@ resource "aws_db_subnet_group" "swiggy-db-sub-grp" {
   name       = "swiggy-db-sub-grp"
   subnet_ids = ["${aws_subnet.swiggy-pvt-sub-3.id}","${aws_subnet.swiggy-pvt-sub-4.id}"]
 }
-
+/*
 resource "aws_db_instance" "swiggy-db" {
   allocated_storage           = 100
   storage_type                = "gp3"
@@ -24,6 +24,8 @@ resource "aws_db_instance" "swiggy-db" {
     prevent_destroy = false
     ignore_changes  = all
   }
+
 }
+/*
 
 
